@@ -7,7 +7,6 @@ server_socket.listen(1)
 
 print("Сервер слухає на порті %s..." % server_address[1])
 
-
 client_socket, client_address = server_socket.accept()
 print("З'єднання встановлене з адреси: %s" % str(client_address))
 
@@ -17,6 +16,7 @@ while True:
     print("Повідомлення від клієнта: %s" % message)
 
     # Обробка отриманого повідомлення (тут можна вставити логіку обробки)
+
 
     # Відправлення відповіді клієнту
     response = "Отримав повідомлення: %s" % message
